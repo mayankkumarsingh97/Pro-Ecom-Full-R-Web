@@ -1,11 +1,13 @@
-*{padding: 0;
+*{
+ padding: 0;
  box-sizing: border-box;
  list-style: none;
 }
 
 body{
 
-	background: #eee;margin: 0;
+	background: #fff;
+	margin: 0;
 }
 .container{
 	/*border: 1px solid #000;*/
@@ -20,6 +22,7 @@ body{
 	align-items: center;
 	/*border-bottom: 1px solid #000;*/
 }
+
 .container header nav ul {
 	list-style: none;
 	display: flex;
@@ -152,7 +155,59 @@ footer .cp-right{
 
 
 
- /*---------------- small screen media q starts here -------------------------------*/
+ 
+
+/* -------------------------------------------------------------------------
+----------------------------media q for md devices has to be done --------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------- */
+
+
+
+@media screen and (max-width:768px){
+	header{
+		flex-basis: 100%;
+	}
+	#pics{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#pics h3{
+		text-align: center;
+	}
+	#pics button{
+		position: relative;
+		left: 100px;
+	}
+	article h2{
+		text-align: center;
+	}
+	.logo{
+		visibility: hidden;
+	}
+
+}
+
+/*-------------------------------------------------------------------------------
+------------------------lg d m q has to be done--------------------------------
+-------------------------------------------------------
+
+*/
+
+@media screen and (max-width:1024px){
+
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------- small screen media q starts here -------------------------------*/
 
 
 
@@ -173,10 +228,12 @@ footer .cp-right{
 		color: blue;
 		font-family: arial;
 		text-shadow: 4px 4px 6px #000;
+		background: beige;
 	}
 	footer .cp-right{
 		margin:4px 0 0 0;
 		color: blue;
+
 	}
 	article h2{
 		/*flex-direction: column;*/
@@ -199,9 +256,13 @@ footer .cp-right{
 		 position: relative;
 		 left: 100px;
 	}
+	aside img{
+		padding: 20px;
+	}
+	 #main-area{
+		padding: 10px;
+	}
+	.logo{
+		visibility: visible;
+	}
 }
-
-/* -------------------------------------------------------------------------
-----------------------------media q for md devices has to be done --------
---------------------------------------------------------------------------
---------------------------------------------------------------------------- */
